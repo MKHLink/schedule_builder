@@ -80,46 +80,244 @@ function loadEvents()
 }
 
 //test
-function checkTime(x)
+function checkTime()
     {
         var currentTime = moment().format('HH');
-        
-        if(x==currentTime){
-            
-            $(".task").each(function()
-            {
+
+        if(currentTime==09)
+        {
+            $(".task1").each(function()
+            {   
                 $(this).addClass("list-group-item");
                 $(this).addClass("list-group-item-danger")
             });
-                
-            
-        }
-        else if(x>currentTime){
-            $(".task").each(function()
+
+            for(var i = 2;i<10;i++)
             {
+                $(".task"+i).each(function()
+                {
+                    $(this).addClass("list-group-item");
+                    $(this).addClass("list-group-item-success")
+                });
+            }
+        }
+        else if(currentTime==10)
+        {
+            for(var i = 1;i<2;i++)
+            {
+                $(".task"+i).each(function()
+                {
+                    $(this).addClass("list-group-item");
+                    $(this).addClass("list-group-item-secondary")
+                });
+            }
+
+            $(".task2").each(function()
+            {   
                 $(this).addClass("list-group-item");
-                $(this).addClass("list-group-item-success")
+                $(this).addClass("list-group-item-danger")
             });
-                
-            
+
+            for(var i = 3;i<10;i++)
+            {
+                $(".task"+i).each(function()
+                {
+                    $(this).addClass("list-group-item");
+                    $(this).addClass("list-group-item-success")
+                });
+            }
+        }
+        else if(currentTime==11)
+        {
+            for(var i = 1;i<3;i++)
+            {
+                $(".task"+i).each(function()
+                {
+                    $(this).addClass("list-group-item");
+                    $(this).addClass("list-group-item-secondary")
+                });
+            }
+
+            $(".task3").each(function()
+            {   
+                $(this).addClass("list-group-item");
+                $(this).addClass("list-group-item-danger")
+            });
+
+            for(var i = 4;i<10;i++)
+            {
+                $(".task"+i).each(function()
+                {
+                    $(this).addClass("list-group-item");
+                    $(this).addClass("list-group-item-success")
+                });
+            }
+        }
+        else if(currentTime==12)
+        {
+            for(var i = 1;i<4;i++)
+            {
+                $(".task"+i).each(function()
+                {
+                    $(this).addClass("list-group-item");
+                    $(this).addClass("list-group-item-secondary")
+                });
+            }
+
+            $(".task4").each(function()
+            {   
+                $(this).addClass("list-group-item");
+                $(this).addClass("list-group-item-danger")
+            });
+
+            for(var i = 5;i<10;i++)
+            {
+                $(".task"+i).each(function()
+                {
+                    $(this).addClass("list-group-item");
+                    $(this).addClass("list-group-item-success")
+                });
+            }
+        }
+        else if(currentTime==13)
+        {
+            for(var i = 1;i<5;i++)
+            {
+                $(".task"+i).each(function()
+                {
+                    $(this).addClass("list-group-item");
+                    $(this).addClass("list-group-item-secondary")
+                });
+            }
+
+            $(".task5").each(function()
+            {   
+                $(this).addClass("list-group-item");
+                $(this).addClass("list-group-item-danger")
+            });
+
+            for(var i = 6;i<10;i++)
+            {
+                $(".task"+i).each(function()
+                {
+                    $(this).addClass("list-group-item");
+                    $(this).addClass("list-group-item-success")
+                });
+            }
+        }
+        else if(currentTime==14)
+        {
+            for(var i = 1;i<6;i++)
+            {
+                $(".task"+i).each(function()
+                {
+                    $(this).addClass("list-group-item");
+                    $(this).addClass("list-group-item-secondary")
+                });
+            }
+
+            $(".task6").each(function()
+            {   
+                $(this).addClass("list-group-item");
+                $(this).addClass("list-group-item-danger")
+            });
+
+            for(var i = 7;i<10;i++)
+            {
+                $(".task"+i).each(function()
+                {
+                    $(this).addClass("list-group-item");
+                    $(this).addClass("list-group-item-success")
+                });
+            }
+        }
+        else if(currentTime==15)
+        {
+            for(var i = 1;i<7;i++)
+            {
+                $(".task"+i).each(function()
+                {
+                    $(this).addClass("list-group-item");
+                    $(this).addClass("list-group-item-secondary")
+                });
+            }
+
+            $(".task7").each(function()
+            {   
+                $(this).addClass("list-group-item");
+                $(this).addClass("list-group-item-danger")
+            });
+
+            for(var i = 8;i<10;i++)
+            {
+                $(".task"+i).each(function()
+                {
+                    $(this).addClass("list-group-item");
+                    $(this).addClass("list-group-item-success")
+                });
+            }
+        }
+        else if(currentTime==16)
+        {
+            for(var i = 1;i<8;i++)
+            {
+                $(".task"+i).each(function()
+                {
+                    $(this).addClass("list-group-item");
+                    $(this).addClass("list-group-item-secondary")
+                });
+            }
+
+            $(".task8").each(function()
+            {   
+                $(this).addClass("list-group-item");
+                $(this).addClass("list-group-item-danger")
+            });
+
+            for(var i = 9;i<10;i++)
+            {
+                $(".task"+i).each(function()
+                {
+                    $(this).addClass("list-group-item");
+                    $(this).addClass("list-group-item-success")
+                });
+            }
+        }
+        else if(currentTime==17)
+        {
+            for(var i = 1;i<9;i++)
+            {
+                $(".task"+i).each(function()
+                {
+                    $(this).addClass("list-group-item");
+                    $(this).addClass("list-group-item-secondary")
+                });
+            }
+
+            $(".task9").each(function()
+            {   
+                $(this).addClass("list-group-item");
+                $(this).addClass("list-group-item-danger")
+            });
+
         }
         else
-        {
-            $(".task").each(function()
+        {   
+           for(var i = 1;i<18;i++)
             {
-                $(this).addClass("list-group-item");
-                $(this).addClass("list-group-item-secondary")
-            });
-                
-            
+                $(".task"+i).each(function()
+                {
+                    $(this).addClass("list-group-item");
+                    $(this).addClass("list-group-item-secondary")
+                });
+            }
         }
     }
 
 setInterval(function()
 {
-    for(var i=09;i<18;i++)
-    {
-        checkTime(i);
-        console.log(i);
-    }
-},5000);
+    checkTime();
+    
+},1000*60*60);
+
+
