@@ -2,6 +2,8 @@
 var date = moment().format('dddd');
 $("#currentDay").append(date);
 
+checkTime();
+
 //Lets the user save their tasks via the button
 $("#save0").on("click",function()
 {
