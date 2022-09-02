@@ -1,9 +1,8 @@
+//shows the date
 var date = moment().format('dddd');
 $("#currentDay").append(date);
 
-//var changeClass = document.querySelector(".task");
-//var classes = changeClass.classList;
-
+//Lets the user save their tasks via the button
 $("#save0").on("click",function()
 {
     var task = document.getElementById("todo0").value;
@@ -68,7 +67,7 @@ $("#save8").on("click",function()
     alert("Saved");
 });
 
-
+//load from local storage functions and its call
 loadEvents();
 
 function loadEvents()
@@ -79,7 +78,8 @@ function loadEvents()
     }
 }
 
-//test
+//a function to check the current time and compare it against the business hours 
+//sets different background colors according to the due time of the task
 function checkTime()
     {
         var currentTime = moment().format('HH');
@@ -314,6 +314,8 @@ function checkTime()
         }
     }
 
+
+//calls the function to check due time every hour
 setInterval(function()
 {
     checkTime();
