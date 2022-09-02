@@ -1,25 +1,15 @@
 var date = moment().format('dddd');
 $("#currentDay").append(date);
 
-
-//var taskEvent=[];
-//event creator
-
-/*$(".task").on("click", function(){
-    var text = $(this).text().trim();
-    var textInput = $("<textarea>").addClass("col-6 text").val(text);
-    $(this).replaceWith(textInput);
-    textInput.trigger("focus");
-});*/
-
-
-//save task
+//var changeClass = document.querySelector(".task");
+//var classes = changeClass.classList;
 
 $("#save0").on("click",function()
 {
     var task = document.getElementById("todo0").value;
     localStorage.setItem("todo0",task);
     alert("Saved");
+    
 });
 
 $("#save1").on("click",function()
@@ -88,3 +78,48 @@ function loadEvents()
         document.getElementById("todo"+i).value=localStorage.getItem("todo"+i);
     }
 }
+
+//test
+function checkTime(x)
+    {
+        var currentTime = moment().format('HH');
+        
+        if(x==currentTime){
+            
+            $(".task").each(function()
+            {
+                $(this).addClass("list-group-item");
+                $(this).addClass("list-group-item-danger")
+            });
+                
+            
+        }
+        else if(x>currentTime){
+            $(".task").each(function()
+            {
+                $(this).addClass("list-group-item");
+                $(this).addClass("list-group-item-success")
+            });
+                
+            
+        }
+        else
+        {
+            $(".task").each(function()
+            {
+                $(this).addClass("list-group-item");
+                $(this).addClass("list-group-item-secondary")
+            });
+                
+            
+        }
+    }
+
+setInterval(function()
+{
+    for(var i=09;i<18;i++)
+    {
+        checkTime(i);
+        console.log(i);
+    }
+},5000);
